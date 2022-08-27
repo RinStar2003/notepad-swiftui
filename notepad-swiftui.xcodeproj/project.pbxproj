@@ -42,7 +42,7 @@
 		44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notepad_swiftuiApp.swift; sourceTree = "<group>"; };
 		44EBED0B28BA4E4200374A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44EBED0C28BA4E4500374A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44EBED1128BA4E4500374A19 /* notepad-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notepad-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBED1128BA4E4500374A19 /* Notepad + .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad + .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EBED1728BA4E4500374A19 /* notepad-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notepad-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EBED1928BA4E4500374A19 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		44EBED1E28BA4E4500374A19 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +119,7 @@
 		44EBED1228BA4E4500374A19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44EBED1128BA4E4500374A19 /* notepad-swiftui.app */,
+				44EBED1128BA4E4500374A19 /* Notepad + .app */,
 				44EBED1728BA4E4500374A19 /* notepad-swiftui.app */,
 				44EBED1E28BA4E4500374A19 /* Tests iOS.xctest */,
 				44EBED2A28BA4E4500374A19 /* Tests macOS.xctest */,
@@ -170,7 +170,7 @@
 			);
 			name = "notepad-swiftui (iOS)";
 			productName = "notepad-swiftui (iOS)";
-			productReference = 44EBED1128BA4E4500374A19 /* notepad-swiftui.app */;
+			productReference = 44EBED1128BA4E4500374A19 /* Notepad + .app */;
 			productType = "com.apple.product-type.application";
 		};
 		44EBED1628BA4E4500374A19 /* notepad-swiftui (macOS) */ = {
@@ -492,7 +492,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
-				PRODUCT_NAME = "notepad-swiftui";
+				PRODUCT_NAME = "Notepad + ";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,7 +522,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
-				PRODUCT_NAME = "notepad-swiftui";
+				PRODUCT_NAME = "Notepad + ";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

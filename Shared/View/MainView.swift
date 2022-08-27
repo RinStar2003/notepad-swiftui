@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State var isColorShowed = false
+    @State var isButtonAnimated = false
     
     var body: some View {
         HStack(spacing: 0) {
@@ -33,14 +34,22 @@ struct MainView: View {
     }
     
     @ViewBuilder
+    func MainContent() -> some View {
+        VStack(spacing: 15) {
+            
+        }
+    }
+    
+    @ViewBuilder
     func SideBar() -> some View {
         VStack {
-            Text("Pocket")
+            Text("Notepad +")
                 .font(.title)
                 .fontWeight(.semibold)
             
             // Button
             AddButton()
+                .zIndex(1)
             
             VStack(spacing: 15) {
                 
@@ -53,6 +62,9 @@ struct MainView: View {
                 }
             }
             .padding(.top, 25)
+            .frame(height: isColorShowed ? nil : 0)
+            .opacity(isColorShowed ? 1 : 0)
+            .zIndex(0)
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.vertical)
@@ -63,17 +75,27 @@ struct MainView: View {
     @ViewBuilder
     func AddButton() -> some View {
         Button {
-            withAnimation {
+            withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.6, blendDuration: 0.6)) {
                 isColorShowed.toggle()
+                isButtonAnimated.toggle()
             }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                withAnimation(.spring()) {
+                    isButtonAnimated.toggle()
+                }
+            }
+            
         } label: {
              Image(systemName: "plus")
                 .font(.title)
                 .foregroundColor(.white)
+                .scaleEffect(isButtonAnimated ? 1.1 : 1)
                 .padding(isMacOS() ? 12 : 15)
                 .background(Color.black)
                 .clipShape(Circle())
         }
+        .scaleEffect(isButtonAnimated ? 1.1 : 1)
         .padding(.top, 30)
     }
     
