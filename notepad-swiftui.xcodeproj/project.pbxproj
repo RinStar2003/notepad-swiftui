@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44EBED2328BA4E4500374A19 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED2228BA4E4500374A19 /* Tests_iOS.swift */; };
+		44EBED2528BA4E4500374A19 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED2428BA4E4500374A19 /* Tests_iOSLaunchTests.swift */; };
+		44EBED2F28BA4E4500374A19 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED2E28BA4E4500374A19 /* Tests_macOS.swift */; };
+		44EBED3128BA4E4500374A19 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED3028BA4E4500374A19 /* Tests_macOSLaunchTests.swift */; };
+		44EBED3228BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */; };
+		44EBED3328BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */; };
+		44EBED3428BA4E4500374A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0B28BA4E4200374A19 /* ContentView.swift */; };
+		44EBED3528BA4E4500374A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0B28BA4E4200374A19 /* ContentView.swift */; };
+		44EBED3628BA4E4500374A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EBED0C28BA4E4500374A19 /* Assets.xcassets */; };
+		44EBED3728BA4E4500374A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EBED0C28BA4E4500374A19 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44EBED1F28BA4E4500374A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44EBED0528BA4E4200374A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44EBED1028BA4E4500374A19;
+			remoteInfo = "notepad-swiftui (iOS)";
+		};
+		44EBED2B28BA4E4500374A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44EBED0528BA4E4200374A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44EBED1628BA4E4500374A19;
+			remoteInfo = "notepad-swiftui (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notepad_swiftuiApp.swift; sourceTree = "<group>"; };
+		44EBED0B28BA4E4200374A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44EBED0C28BA4E4500374A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44EBED1128BA4E4500374A19 /* notepad-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notepad-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBED1728BA4E4500374A19 /* notepad-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notepad-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBED1928BA4E4500374A19 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		44EBED1E28BA4E4500374A19 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBED2228BA4E4500374A19 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		44EBED2428BA4E4500374A19 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		44EBED2A28BA4E4500374A19 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBED2E28BA4E4500374A19 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		44EBED3028BA4E4500374A19 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44EBED0E28BA4E4500374A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1428BA4E4500374A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1B28BA4E4500374A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED2728BA4E4500374A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44EBED0428BA4E4200374A19 = {
+			isa = PBXGroup;
+			children = (
+				44EBED0928BA4E4200374A19 /* Shared */,
+				44EBED1828BA4E4500374A19 /* macOS */,
+				44EBED2128BA4E4500374A19 /* Tests iOS */,
+				44EBED2D28BA4E4500374A19 /* Tests macOS */,
+				44EBED1228BA4E4500374A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44EBED0928BA4E4200374A19 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */,
+				44EBED0B28BA4E4200374A19 /* ContentView.swift */,
+				44EBED0C28BA4E4500374A19 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		44EBED1228BA4E4500374A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED1128BA4E4500374A19 /* notepad-swiftui.app */,
+				44EBED1728BA4E4500374A19 /* notepad-swiftui.app */,
+				44EBED1E28BA4E4500374A19 /* Tests iOS.xctest */,
+				44EBED2A28BA4E4500374A19 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44EBED1828BA4E4500374A19 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED1928BA4E4500374A19 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		44EBED2128BA4E4500374A19 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED2228BA4E4500374A19 /* Tests_iOS.swift */,
+				44EBED2428BA4E4500374A19 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		44EBED2D28BA4E4500374A19 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED2E28BA4E4500374A19 /* Tests_macOS.swift */,
+				44EBED3028BA4E4500374A19 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44EBED1028BA4E4500374A19 /* notepad-swiftui (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44EBED3A28BA4E4500374A19 /* Build configuration list for PBXNativeTarget "notepad-swiftui (iOS)" */;
+			buildPhases = (
+				44EBED0D28BA4E4500374A19 /* Sources */,
+				44EBED0E28BA4E4500374A19 /* Frameworks */,
+				44EBED0F28BA4E4500374A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "notepad-swiftui (iOS)";
+			productName = "notepad-swiftui (iOS)";
+			productReference = 44EBED1128BA4E4500374A19 /* notepad-swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44EBED1628BA4E4500374A19 /* notepad-swiftui (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44EBED3D28BA4E4500374A19 /* Build configuration list for PBXNativeTarget "notepad-swiftui (macOS)" */;
+			buildPhases = (
+				44EBED1328BA4E4500374A19 /* Sources */,
+				44EBED1428BA4E4500374A19 /* Frameworks */,
+				44EBED1528BA4E4500374A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "notepad-swiftui (macOS)";
+			productName = "notepad-swiftui (macOS)";
+			productReference = 44EBED1728BA4E4500374A19 /* notepad-swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44EBED1D28BA4E4500374A19 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44EBED4028BA4E4500374A19 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				44EBED1A28BA4E4500374A19 /* Sources */,
+				44EBED1B28BA4E4500374A19 /* Frameworks */,
+				44EBED1C28BA4E4500374A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44EBED2028BA4E4500374A19 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 44EBED1E28BA4E4500374A19 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		44EBED2928BA4E4500374A19 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44EBED4328BA4E4500374A19 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				44EBED2628BA4E4500374A19 /* Sources */,
+				44EBED2728BA4E4500374A19 /* Frameworks */,
+				44EBED2828BA4E4500374A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44EBED2C28BA4E4500374A19 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 44EBED2A28BA4E4500374A19 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44EBED0528BA4E4200374A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44EBED1028BA4E4500374A19 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					44EBED1628BA4E4500374A19 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					44EBED1D28BA4E4500374A19 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44EBED1028BA4E4500374A19;
+					};
+					44EBED2928BA4E4500374A19 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 44EBED1628BA4E4500374A19;
+					};
+				};
+			};
+			buildConfigurationList = 44EBED0828BA4E4200374A19 /* Build configuration list for PBXProject "notepad-swiftui" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44EBED0428BA4E4200374A19;
+			productRefGroup = 44EBED1228BA4E4500374A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44EBED1028BA4E4500374A19 /* notepad-swiftui (iOS) */,
+				44EBED1628BA4E4500374A19 /* notepad-swiftui (macOS) */,
+				44EBED1D28BA4E4500374A19 /* Tests iOS */,
+				44EBED2928BA4E4500374A19 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44EBED0F28BA4E4500374A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED3628BA4E4500374A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1528BA4E4500374A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED3728BA4E4500374A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1C28BA4E4500374A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED2828BA4E4500374A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44EBED0D28BA4E4500374A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED3428BA4E4500374A19 /* ContentView.swift in Sources */,
+				44EBED3228BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1328BA4E4500374A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED3528BA4E4500374A19 /* ContentView.swift in Sources */,
+				44EBED3328BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED1A28BA4E4500374A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED2528BA4E4500374A19 /* Tests_iOSLaunchTests.swift in Sources */,
+				44EBED2328BA4E4500374A19 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EBED2628BA4E4500374A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EBED3128BA4E4500374A19 /* Tests_macOSLaunchTests.swift in Sources */,
+				44EBED2F28BA4E4500374A19 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44EBED2028BA4E4500374A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44EBED1028BA4E4500374A19 /* notepad-swiftui (iOS) */;
+			targetProxy = 44EBED1F28BA4E4500374A19 /* PBXContainerItemProxy */;
+		};
+		44EBED2C28BA4E4500374A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44EBED1628BA4E4500374A19 /* notepad-swiftui (macOS) */;
+			targetProxy = 44EBED2B28BA4E4500374A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44EBED3828BA4E4500374A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44EBED3928BA4E4500374A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		44EBED3B28BA4E4500374A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
+				PRODUCT_NAME = "notepad-swiftui";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44EBED3C28BA4E4500374A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
+				PRODUCT_NAME = "notepad-swiftui";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44EBED3E28BA4E4500374A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
+				PRODUCT_NAME = "notepad-swiftui";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44EBED3F28BA4E4500374A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
+				PRODUCT_NAME = "notepad-swiftui";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		44EBED4128BA4E4500374A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "notepad-swiftui (iOS)";
+			};
+			name = Debug;
+		};
+		44EBED4228BA4E4500374A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "notepad-swiftui (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44EBED4428BA4E4500374A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "notepad-swiftui (macOS)";
+			};
+			name = Debug;
+		};
+		44EBED4528BA4E4500374A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "notepad-swiftui (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44EBED0828BA4E4200374A19 /* Build configuration list for PBXProject "notepad-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EBED3828BA4E4500374A19 /* Debug */,
+				44EBED3928BA4E4500374A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44EBED3A28BA4E4500374A19 /* Build configuration list for PBXNativeTarget "notepad-swiftui (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EBED3B28BA4E4500374A19 /* Debug */,
+				44EBED3C28BA4E4500374A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44EBED3D28BA4E4500374A19 /* Build configuration list for PBXNativeTarget "notepad-swiftui (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EBED3E28BA4E4500374A19 /* Debug */,
+				44EBED3F28BA4E4500374A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44EBED4028BA4E4500374A19 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EBED4128BA4E4500374A19 /* Debug */,
+				44EBED4228BA4E4500374A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44EBED4328BA4E4500374A19 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EBED4428BA4E4500374A19 /* Debug */,
+				44EBED4528BA4E4500374A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44EBED0528BA4E4200374A19 /* Project object */;
+}
