@@ -12,11 +12,13 @@
 		44EBED2F28BA4E4500374A19 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED2E28BA4E4500374A19 /* Tests_macOS.swift */; };
 		44EBED3128BA4E4500374A19 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED3028BA4E4500374A19 /* Tests_macOSLaunchTests.swift */; };
 		44EBED3228BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */; };
-		44EBED3328BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */; };
 		44EBED3428BA4E4500374A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0B28BA4E4200374A19 /* ContentView.swift */; };
-		44EBED3528BA4E4500374A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0B28BA4E4200374A19 /* ContentView.swift */; };
 		44EBED3628BA4E4500374A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EBED0C28BA4E4500374A19 /* Assets.xcassets */; };
 		44EBED3728BA4E4500374A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EBED0C28BA4E4500374A19 /* Assets.xcassets */; };
+		44EBED5028BA524100374A19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED4F28BA524100374A19 /* MainView.swift */; };
+		44EBED5128BA525A00374A19 /* notepad_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */; };
+		44EBED5228BA525F00374A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED0B28BA4E4200374A19 /* ContentView.swift */; };
+		44EBED5328BA526A00374A19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBED4F28BA524100374A19 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		44EBED2A28BA4E4500374A19 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EBED2E28BA4E4500374A19 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		44EBED3028BA4E4500374A19 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		44EBED4F28BA524100374A19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4407348528BA5AA40079D131 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44EBED4F28BA524100374A19 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		44EBED0428BA4E4200374A19 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				44EBED0A28BA4E4200374A19 /* notepad_swiftuiApp.swift */,
+				4407348528BA5AA40079D131 /* View */,
 				44EBED0B28BA4E4200374A19 /* ContentView.swift */,
 				44EBED0C28BA4E4500374A19 /* Assets.xcassets */,
 			);
@@ -300,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44EBED3428BA4E4500374A19 /* ContentView.swift in Sources */,
+				44EBED5028BA524100374A19 /* MainView.swift in Sources */,
 				44EBED3228BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,8 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44EBED3528BA4E4500374A19 /* ContentView.swift in Sources */,
-				44EBED3328BA4E4500374A19 /* notepad_swiftuiApp.swift in Sources */,
+				44EBED5228BA525F00374A19 /* ContentView.swift in Sources */,
+				44EBED5328BA526A00374A19 /* MainView.swift in Sources */,
+				44EBED5128BA525A00374A19 /* notepad_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +515,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +549,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
 				PRODUCT_NAME = "notepad-swiftui";
@@ -563,7 +577,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rinarprojects.notepad-swiftui";
 				PRODUCT_NAME = "notepad-swiftui";
