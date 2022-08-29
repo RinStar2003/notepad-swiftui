@@ -26,6 +26,7 @@ struct MainView: View {
             }
             
             // Main
+            MainContent()
         }
         .ignoresSafeArea()
         .frame(width: isMacOS() ? getRectangle().width / 1.7 : nil, height: isMacOS() ? getRectangle().height - 180 : nil, alignment: .leading)
@@ -37,7 +38,20 @@ struct MainView: View {
     func MainContent() -> some View {
         VStack(spacing: 15) {
             
+            // Search Bar
+            HStack(spacing: 10) {
+                Image(systemName: "magnifyingglass")
+                    .font(.title3)
+                    .foregroundColor(.gray)
+                
+                TextField("Search", text: .constant(""))
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.bottom, isMacOS() ? 0 : 10)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .padding(.top, isMacOS() ? 25 : 0)
+        .padding(.horizontal, 25)
     }
     
     @ViewBuilder
@@ -127,3 +141,13 @@ extension View {
     }
     
 }
+
+// Hiding Focus Ring
+#if os(macOS)
+extension NSTextField {
+    open override var focusRingType: NSFocusRingType {
+        get{.none}
+        set{}
+    }
+}
+#endif
