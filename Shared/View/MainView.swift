@@ -45,9 +45,29 @@ struct MainView: View {
                     .foregroundColor(.gray)
                 
                 TextField("Search", text: .constant(""))
+                    .background(Color.white)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.bottom, isMacOS() ? 0 : 10)
+        
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                VStack(spacing: 15) {
+                    Text("Notes")
+                        .font(isMacOS() ? .system(size: 33, weight: .bold) : .largeTitle.bold())
+                    
+                    // Columns
+                    
+                    let columns = Array(repeating: GridItem(.flexible(),spacing: isMacOS() ? 25 : 15), count: isMacOS() ? 3 : 1)
+                    
+                    LazyVGrid(columns: columns,spacing: 25) {
+                        
+                    }
+                }
+                .padding(.top, isMacOS() ? 45 : 30)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(.top, isMacOS() ? 25 : 0)
